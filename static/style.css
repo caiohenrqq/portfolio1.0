@@ -91,7 +91,7 @@ html, body {
 }
 
 section#inicio {
-    background-image: url("./img/background.jpg");
+    background-image: url("./img/gradient1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -116,9 +116,11 @@ section#inicio span #subtitle {
 
 section#inicio div#arraste {
     width: 9rem;
+    text-decoration: none;
+    color: #fff;
 }
 
-section#inicio div#arraste {
+#texto-arraste {
     text-decoration: none;
     color: #fff;
 }
@@ -168,3 +170,26 @@ i.menu-mobile {
     }
 }
 
+::-webkit-scrollbar {
+    width: 5px; /* 1px wider than Lion. */
+    /* This is more usable for users trying to click it. */
+    background-color: rgba(0,0,0,0);
+    -webkit-border-radius: 100px;
+  }
+  /* hover effect for both scrollbar area, and scrollbar 'thumb' */
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+  
+  /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+  ::-webkit-scrollbar-thumb:vertical {
+    /* This is the EXACT color of Mac OS scrollbars. 
+       Yes, I pulled out digital color meter */
+    background: rgba(0,0,0,0.5);
+    -webkit-border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+    -webkit-border-radius: 100px;
+  }
+  
